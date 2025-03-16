@@ -4,10 +4,9 @@ const area = pi * radius ** 2;
 const planetSpace = 0.8;
 const startPlants = 20;
 const plantsLimit = area / planetSpace;
-// console.log(plantsLimit);
 
 let week = 1;
-let weeklyPlant = startPlants * 2 ** week;
+let weeklyPlant = startPlants * 2;
 let percentage = ((weeklyPlant / plantsLimit) * 100).toFixed(2);
 
 if (percentage >= 80) {
@@ -18,14 +17,20 @@ if (percentage >= 80) {
   console.log(`Week ${week}: ${percentage}% full - plant more`);
 }
 
-// let week2 = 2;
-// let weeklyPlant2 = startPlants * 2 ** week2;
-// let percentage2 = ((weeklyPlant2 / plantsLimit) * 100).toFixed(2);
+// Week2
 
-// if (percentage >= 80) {
-//   console.log(`week ${week2}: ${percentage}%  full - prune`);
-// } else if (percentage >= 50) {
-//   console.log(`Week ${week2}: ${weeklyPlant}% full - monitor`);
-// } else {
-//   console.log(`Week ${week2}: ${percentage}% full - plant more`);
-// }
+let week2 = 2;
+let weeklyPlant2 = weeklyPlant * 2;
+let percentage2 = ((weeklyPlant2 / plantsLimit) * 100).toFixed(2);
+
+if (percentage2 >= 80) {
+  console.log(`week ${week2}: ${percentage2}%  full - prune`);
+} else if (percentage2 >= 50 && percentage2 < 80) {
+  console.log(`Week ${week2}: ${weeklyPlant2}% full - monitor`);
+} else {
+  console.log(`Week ${week2}: ${percentage2}% full - plant more`);
+}
+
+// Week 3
+
+
