@@ -33,4 +33,16 @@ if (percentage2 >= 80) {
 
 // Week 3
 
+let week3 = 3;
+let weeklyPlant3 = weeklyPlant2 * 2;
+let percentage3 = ((weeklyPlant3 / plantsLimit) * 100).toFixed(2);
 
+if (percentage3 >= 80) {
+  console.log(
+    `week ${week3}: ${percentage3}%  full - prune and stop planting!`
+  );
+} else if (percentage3 >= 50 && percentage3 < 80) {
+  console.log(`Week ${week3}: ${weeklyPlant3}% full - monitor`);
+} else {
+  console.log(`Week ${week3}: ${percentage3}% full - plant more`);
+}
