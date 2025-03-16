@@ -46,3 +46,39 @@ if (percentage3 >= 80) {
 } else {
   console.log(`Week ${week3}: ${percentage3}% full - plant more`);
 }
+
+////////////
+// Week 10
+
+const week10 = 10;
+let weekTenStartPlants = 100;
+
+try {
+  if (weekTenStartPlants * planetSpace > area) {
+    console.log("Warning!!!, Number of plants exceeds the available space.");
+  }
+
+  //  10 week plants with loop
+  for (let i = 0; i < week10; i++) {
+    weekTenStartPlants *= 2;
+  }
+
+  const requiredSpace = weekTenStartPlants * planetSpace;
+  const additionalSpace = (requiredSpace - area).toFixed(2);
+
+  console.log(
+    `At the end of week 10, plants grow will be:  ${weekTenStartPlants}`
+  );
+  console.log(`Week 10 required space: ${requiredSpace} square meters.`);
+  console.log(
+    `Week 10 additional space needed : ${additionalSpace} square meters Additional space.`
+  );
+
+  //   Calculate the radius of week 10 // This part idea comes from "stack overflow" !!!
+  let newRadius = Math.sqrt(requiredSpace / pi).toFixed(2);
+  console.log(
+    `The radius of 10 weeks of planting going to be: ${newRadius} meters.`
+  );
+} catch (err) {
+  console.log(err);
+}
