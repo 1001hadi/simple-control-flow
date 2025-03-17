@@ -71,7 +71,7 @@ try {
 
   console.log(`Week 10 required space: ${requiredSpace} square meters.`);
   console.log(
-    `Week 10 additional space needed : ${additionalSpace} square meters Additional space.`
+    `Week 10 additional space needed : ${additionalSpace} square meters .`
   );
 
   //   Calculate the radius of week 10 // This part idea comes from "stack overflow" !!!
