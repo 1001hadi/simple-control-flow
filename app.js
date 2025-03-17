@@ -63,7 +63,7 @@ try {
     weekTenStartPlants *= 2;
   }
   console.log(
-    `At the end of week 10, plants grow will be:  ${weekTenStartPlants}`
+    `At the end of week 10, plants grow will be: ${weekTenStartPlants}`
   );
 
   const requiredSpace = weekTenStartPlants * planetSpace;
