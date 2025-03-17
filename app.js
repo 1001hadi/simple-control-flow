@@ -58,7 +58,7 @@ try {
     console.log("Warning!!!, Number of plants exceeds the available space.");
   }
 
-  //  10 week plants with loop
+  //  10 week plants total with loop
   for (let i = 0; i < week10; i++) {
     weekTenStartPlants *= 2;
   }
