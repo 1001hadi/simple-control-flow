@@ -19,9 +19,9 @@ if (percentage >= 80) {
 
 // Week2
 
-let week2 = 2;
-let weeklyPlant2 = weeklyPlant * 2;
-let percentage2 = ((weeklyPlant2 / plantsLimit) * 100).toFixed(2);
+const week2 = 2;
+const weeklyPlant2 = weeklyPlant * 2;
+const percentage2 = ((weeklyPlant2 / plantsLimit) * 100).toFixed(2);
 
 if (percentage2 >= 80) {
   console.log(`week ${week2}: ${percentage2}%  full - prune`);
@@ -33,9 +33,9 @@ if (percentage2 >= 80) {
 
 // Week 3
 
-let week3 = 3;
-let weeklyPlant3 = weeklyPlant2 * 2;
-let percentage3 = ((weeklyPlant3 / plantsLimit) * 100).toFixed(2);
+const week3 = 3;
+const weeklyPlant3 = weeklyPlant2 * 2;
+const percentage3 = ((weeklyPlant3 / plantsLimit) * 100).toFixed(2);
 
 if (percentage3 >= 80) {
   console.log(
@@ -75,7 +75,7 @@ try {
   );
 
   //   Calculate the radius of week 10 // This part idea comes from "stack overflow" !!!
-  let newRadius = Math.sqrt(requiredSpace / pi).toFixed(2);
+  const newRadius = Math.sqrt(requiredSpace / pi).toFixed(2);
   console.log(
     `The radius of 10 weeks of planting going to be: ${newRadius} meters.`
   );
