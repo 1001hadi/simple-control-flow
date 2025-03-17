@@ -62,13 +62,13 @@ try {
   for (let i = 0; i < week10; i++) {
     weekTenStartPlants *= 2;
   }
+  console.log(
+    `At the end of week 10, plants grow will be:  ${weekTenStartPlants}`
+  );
 
   const requiredSpace = weekTenStartPlants * planetSpace;
   const additionalSpace = (requiredSpace - area).toFixed(2);
 
-  console.log(
-    `At the end of week 10, plants grow will be:  ${weekTenStartPlants}`
-  );
   console.log(`Week 10 required space: ${requiredSpace} square meters.`);
   console.log(
     `Week 10 additional space needed : ${additionalSpace} square meters Additional space.`
